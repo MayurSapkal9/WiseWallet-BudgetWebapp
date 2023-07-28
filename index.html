@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Expense-Tracker-Webapp</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/> <!--adding favicon-->
+
+</head>
+<body>
+    <div class="head">
+        <div class="navbar">
+          <div class="logoandname">
+           <div class="moneyimage" >
+           <img  width="90" src="images/info2.png" alt="moneyimage"></div>
+             <div class="mainheading"><h2 >WiseWallet</h2> </div> 
+            </div>
+               
+              <div class="contactbar">
+           <div class="contactbutton"> <button class="btn1">contact</button> </div>
+             <div class="container" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+            
+                  
+                    <div id="myDropdown" class="dropdown-content hide">
+                      <a href="#" data-target="home">Home</a>
+                      <a href="#" data-target="history">History</a>
+                      <a href="#" data-target="about">About Us</a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            
+            
+       
+    </div>
+    <div class="info">
+      <div  class="intro">
+    <h1 class="tagline" >Spend Smart,<br><span> Save Smarter! </span> </h1>
+     <div class="taglineimage"> <img  width="200"src="images/info1.png" alt="moneyimage2"></div>
+    </div>
+       
+    </div>
+
+    <div  id ="home" class="home">
+      <div class="laptop-screen">
+      <div class="balance">
+        <h2 class="bala">BALANCE</h2>
+        <div class="bad"><h1 id="rssignbalance">&#8377 0.00</h1></div>
+
+       </div>
+       
+       <div class="expensesheet">
+        <div class="income">
+          <h2 class="bala">Income </h2>
+          <h1 id="rssignincome">&#8377 0.00</h1>
+
+        </div>
+        <div class="l1"></div>
+        
+        <div class="expense">
+          <h2 class="bala">Expense</h2>
+          <h1 id="rssignexpense">&#8377 0.00</h1>
+        </div>
+       </div>
+      
+    </div>
+    <div class="newtransaction">
+    <div class="mobile-screen">
+       <form>
+      <h2>Add Transaction</h2>
+      <div class="transaction">
+        <p class="transactionline">Category:</p>
+        <div class="custom-select" style="width:200px;">
+        <select id="selecttype" class="transactionbox">
+          <option value="0"> </option>
+          <option value="Income">Income</option>
+          <option value="Expense">Expense</option>
+        </select>
+      </div>
+      </div>
+      <div class="description">
+        <p class="transactionline">Description:</p>
+        <input type="text" id="description" class="transactionbox" placeholder="Add Description">
+      </div>
+      <div class="amount">
+        <p class="transactionline">Enter Amount:</p>
+        <input type="number" id="amount" class="transactionbox" placeholder="Add Amount">
+      </div>
+      <div class="date">
+        <p class="transactionline">Enter Date:</p>
+        <input type="date" id="date" class="transactionbox">
+      </div>
+      <h3></h3>
+      <div class="submitbutton">
+        <button  class="addexpense" > Add Expense</button>
+
+      </div>
+      </form>
+
+
+      </div>
+
+    
+    </div>
+  </div>
+      
+
+    <div id="history" class="History">
+
+      <div class="history-sheet">
+        <h2>Transaction History</h2>
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <!--manual entry-->
+           
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+
+    <div id="about" class="about">
+      <div class="contact">
+        <a href="https://github.com/MayurSapkal9"><img width="40" src="images/footer/github.png" alt="github"></a>
+        <a href=""><img width="40" src="images/footer/instagram.png" alt="instagram"></a>
+        <a href="https://www.linkedin.com/in/mayuresh-sapkal-ba3b46214/"><img  width="40"src="images/footer/linkedin.png" alt="linkedin"></a>
+        <a href="https://twitter.com/mayureshsapkal9"><img width="40" src="images/footer/twitter.png" alt="twitter"></a>
+      </div>
+      
+      <p>Introducing WiseWallet: Your financial companion. Track income, manage expenses & gain insights. Explore now!</p>
+    <p>Feel free to explore , and if you have any feedback or questions, don't hesitate to get in touch!</p>
+      
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023 WiseWallet</p>
+    </footer>
+    
+</body>
+<script src="index.js"></script>
+</html>
